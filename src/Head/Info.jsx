@@ -1,8 +1,9 @@
-import { useState } from 'react';
+
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { PRICE_BUTTONS } from './Constant';
+
 function Info({ activePrice, setActivePrice }) {
 
 
@@ -13,8 +14,10 @@ function Info({ activePrice, setActivePrice }) {
         <>
             <Col></Col>
             <Col> <ButtonGroup aria-label="">
-                {PRICE_BUTTONS.map(({ name, id }) => (<Button key={id} active={activePrice === id} onClick={() =>
-                    setActivePrice(id)} variant="secondary">{name}</Button>))}
+                {PRICE_BUTTONS.map(({ name, id }) =>
+                (<Button key={id} active={activePrice === id}
+                    onClick={() => setActivePrice(id)} variant="secondary">{name}</Button>))
+                }
             </ButtonGroup></Col>
             <Col></Col>
         </>
