@@ -1,12 +1,25 @@
+export const LOW = 'low';
+export const HIGH = 'high';
+
+export const BADGES = [
+    {
+        name: 'success',
+        id: LOW,
+    },
+    {
+        name: 'danger',
+        id: HIGH,
+    }
+]
 export const PRICE_BUTTONS = [
     {
         name: 'lowPrice',
-        id: 'Low',
+        id: LOW,
     },
     {
         name: 'highPrice',
-        id: 'High',
+        id: HIGH,
     },
 ];
 
-export const DEFAULT_ACTIVE_BUTTON = 'low'
+export const DEFAULT_ACTIVE_BUTTON = LOW;
