@@ -22,4 +22,5 @@ export const PRICE_BUTTONS = [
     },
 ];
 
+
 export const DEFAULT_ACTIVE_BUTTON = LOW;
