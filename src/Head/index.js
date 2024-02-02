@@ -1,4 +1,3 @@
+export * from './constants';
 
-export * from './Constant'
-
-export {default} from './Head';
+export { default } from './Head';

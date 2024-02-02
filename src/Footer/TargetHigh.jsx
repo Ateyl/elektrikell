@@ -1,15 +1,12 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function TargetHigh() {
-    return (
-        <>
-            <Row>
-                <Col>Target high</Col>
-            </Row>
-        </>
-    )
+  return (
+    <Row>
+      <Col>TargetHigh</Col>
+    </Row>
+  );
 }
 
-export default TargetHigh
+export default TargetHigh;
