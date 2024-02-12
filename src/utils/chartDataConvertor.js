@@ -8,5 +8,3 @@ export default function chartDataConvertor(priceData) {
     hour: moment.unix(data.timestamp).format("HH"),
   }));
 }
-
-//export default chartDataConvertor ALREADY IN INDEX.JS

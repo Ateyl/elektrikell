@@ -1,8 +1,11 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Intervals from "./Intervals";
+import Countdown from "react-countdown";
 
 function TargetLow(props) {
+  const { bestUntil } = props;
+
   return (
     <>
       <Row>
@@ -14,7 +17,13 @@ function TargetLow(props) {
         </Col>
       </Row>
       <Row>
-        <Col></Col>
+        <Col>
+          {bestUntil && (
+            <Countdown date={bestUntil * 1000}>
+              <div>The time is now!</div>
+            </Countdown>
+          )}
+        </Col>
       </Row>
     </>
   );
